@@ -1,0 +1,6 @@
+root@ip-172-31-87-138:/home/ubuntu/docker-demo/demo2/addressbook-demo/target# sudo vi demo
+FROM tomcat9
+COPY target/addressbook-2.0.war /usr/local/tomcat/webapps/
+CMD ["catalina.sh","run"]
+EXPOSE 8080
+
